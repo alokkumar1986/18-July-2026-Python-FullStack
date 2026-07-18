@@ -1,0 +1,21 @@
+git account
+#========================
+
+Install git : https://git-scm.com/install/ 
+#=========================================
+
+Get the GitHub repository (x)
+#=========================================
+https://github.com/alokkumar1986/18-July-2026-Python-FullStack.git
+
+
+Clone this repo
+#=========================================
+git clone https://github.com/alokkumar1986/18-July-2026-Python-FullStack.git
+
+
+python
+vscode + AI
+
+colab 
+jupyter notebook
