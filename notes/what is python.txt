@@ -1,0 +1,62 @@
+Python :
+
+What is python ? 
+
+#python is a programming language. 
+
+Java, Python, C, C++ etc 
+
+#Python is a high-level programming language.
+
+English ----> interpreter/compiler  -----> (teleprompter)
+
+
+interpreter:  it interprets line by line. when there is error in between lines, it stops interpreting. it is slower.
+
+compiler: it compiles whole program file and creates a compiled file to run. when there is error in between the file, the file won't compiled. it is faster.
+
+
+#Python is a general purpose high-level programming language.
+
+
+REPL : Read Eval Print Loop
+
+cmd --> python <--enter   
+
+Python interactive shell : 
+
+
+mobile
+web
+desktop
+
+data analysis
+data science
+machine learning
+AI
+
+
+Python is an all-rounder. 
+
+Program Style : Programming paradigm
+
+1) Scripting Language : JavaScript, PHP, Perl, Python, ASP, JSP, Python
+2) Procedure Oriented : C, Python
+3) Object Oriented  : C++, Java, Python
+4) Shell Scripting  : Python
+
+
+Python : Why is its name as 'Python'.
+
+
+Prompt Engineer
+Data Engineer 
+AI/ML Engineer
+Data Scientist
+Software Engineer (Full Stack)
+
+ 
+
+
+
+
