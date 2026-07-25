@@ -1,0 +1,91 @@
+python input and output :
+#========================
+
+input()
+print()
+
+
+input:
+-----
+num1 = input('Enter First number : ')
+
+Here input() takes input from user and stores it in the variable num1.
+
+The input() always takes input in the form of string.
+
+typecasting : explicit / implicit
+
+int()
+float()
+string()
+
+example : Write a python program to take input three values and convert it int, float and string respectively and print the value.
+
+
+floating string can not converted to int
+string of alphabet can not converted to int
+
+
+output:
+--------
+
+print() : To give output to the user
+
+Note : print() always give output in a new line
+
+Types :
+
+1) Print any text
+
+print('Aptech Learning Center')
+print('Alok Kumar Nayak')
+
+####
+####
+####
+####
+
+#
+##
+###
+####
+#####
+
+    *
+   * *
+  * * *
+ * * * *
+* * * * *
+
+
+2) Print value of any variable
+
+a = 100
+print(a)
+
+3) Print multiple text
+
+print('Alok', 'Kumar', 'Nayak')
+
+4) print values of multiple variables
+
+a = 100
+b = 10
+c = 20.23
+print(a, b, c)
+
+
+5) print text with value of variable
+
+a = 100
+print('The value of a is ', a)
+
+6) print multiple text with multiple values of variables
+
+a = 100
+b = 10
+c = 5
+
+print('A value is ', a, 'B value is', b, 'C value is', c)
+
+
