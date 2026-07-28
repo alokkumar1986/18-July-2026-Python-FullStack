@@ -4,6 +4,8 @@ git account
 Install git : https://git-scm.com/install/ 
 #=========================================
 
+git --version
+
 Get the GitHub repository (x)
 #=========================================
 https://github.com/alokkumar1986/18-July-2026-Python-FullStack.git
@@ -35,15 +37,27 @@ python --version
 py -V
 python -V
 
+vscode + AI(windsurf(devon))
+#=======================================================
+
+download and installation of vscode
+
+https://code.visualstudio.com
+
+
+
 
 colab + AI (Gemini):  
 
 #=======================================================
+https://colab.research.google.com/
 
-vscode + AI
-#=======================================================
+
+
 
 jupyter notebook
+
+#======================================================
 
 pip : package installer for python, It comes with python
 
