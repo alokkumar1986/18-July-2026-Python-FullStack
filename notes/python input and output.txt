@@ -57,6 +57,15 @@ print('Alok Kumar Nayak')
  * * * *
 * * * * *
 
+escape character :
+
+\n : new line 
+\t : horizontal space (tab)
+\r : carriage return
+\\ : One slash \
+\' : single quote
+\" : double quote
+
 
 2) Print value of any variable
 
@@ -87,5 +96,34 @@ b = 10
 c = 5
 
 print('A value is ', a, 'B value is', b, 'C value is', c)
+
+
+1) a=100, b=Aptech, c=3.17
+
+7) print text/value with end = ''
+
+end='' tells to print the next line from the end the same line of current print
+
+
+
+8) print text/value with sep = ''
+
+sep ='' tells to print all the text/values with separated by a symbol/string
+
+
+9) print text/value with {}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
