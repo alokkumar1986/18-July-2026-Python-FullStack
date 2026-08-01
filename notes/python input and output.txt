@@ -110,9 +110,20 @@ end='' tells to print the next line from the end the same line of current print
 
 sep ='' tells to print all the text/values with separated by a symbol/string
 
+a = 5
+b = 10
+c = 15
+print(a, b, c, sep=",") 
+
+ouput : 5, 10, 15
 
 9) print text/value with {}
 
+a = 5
+b = 10
+c = 15
+
+print("a={}, b={}, c={}".format(c, a, b))
 
 
 
