@@ -1,0 +1,70 @@
+Fundamentals of Python : 
+#===========================#
+
+1) Whitespaces & Indentation:
+
+Like other programming language, python does not support ; (semicolon) at the end of a line. This semicolon specifies the end of the line.
+
+e.g int a =10; int b = 15;
+
+But the same can n't be written in python
+
+e.g a = 10 b = 15
+
+The above will give you error. For that reason, we need proper indentation. 
+
+Note : Every python line should start from a common line.
+
+Also python has no {} which is generally used for specifying a block. Hence in python whitespaces are used to specify a block. 
+
+A block is generally starts with for, if, elif, else, def words. Whenever we find/write these words, python expects the next line should start with a whitespace.
+
+Benefits : Every coder's code will look like same. It will be easy to see, understand and debug.
+
+
+2) Comments: 
+
+comments are for programmers/coders.  There two types of comments. 
+
+1) single-line 
+2) multi-line
+
+single-line comment (#) : If we put a hash(#) in front of line, the line is not visible to python interpreter. Hence it will not execute that line.
+
+
+multi-line comment ('''    '''/ """   """) : If we need to comment more than one line, then we use ('''    '''/ """   """).
+
+
+3) Keywords : 
+
+Keywords are reserved words in python. Which means it has some specific meaning to the python program and you can not use them for other purposes.
+
+There are 35 keywords.
+
+4) Identifiers :
+
+Any name used in python program is called as an identifier.
+
+A variable/function name are basically identifiers. Writing an identifier has some rules.
+
+1) It should be meaningful, short and precise.
+
+2) All identifiers should contain a-z,A-Z,0-9,_.
+
+3) An identifier should start with an alphabet or _.
+
+4) An identifier does not contain any symbol.
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+
