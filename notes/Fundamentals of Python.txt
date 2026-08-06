@@ -49,12 +49,15 @@ A variable/function name are basically identifiers. Writing an identifier has so
 
 1) It should be meaningful, short and precise.
 
-2) All identifiers should contain a-z,A-Z,0-9,_.
+2) All identifiers should contain a-z,A-Z,0-9,_
 
-3) An identifier should start with an alphabet or _.
+3) An identifier should start with an alphabet or _
 
 4) An identifier does not contain any symbol.
 
+5) Identifiers are case-sensitive.
+
+6)A key word can not be an identifier.
 
  
 
