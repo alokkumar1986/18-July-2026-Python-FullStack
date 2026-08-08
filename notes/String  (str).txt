@@ -1,0 +1,38 @@
+String : (str)
+#=================
+
+Any value  that is enclosed with a '' or "" is called a string.
+
+a = 'Aptech'
+
+print(type(a))  
+
+
+string is also the combination characters. (alphabets, numbers, symbols)
+
+a = '123&687685RAM'
+print(type(a))
+
+We can print each characters of the string using [] and its position from left. the position starts with 0.
+
+a = '123&687685RAM'
+
+print(a[10])
+
+Also its position from right starting from -1
+
+The position from left starts with 0 and from right starts with -1  is called index.
+
+string slicing : 
+
+slicing means geting piece of the string. 
+
+string[s:s:s] === s : start index (optional)
+                  s : stop index (optional) (always excluded)
+                  s : step (optional)
+
+a = '123&687685RAM'
+print(a[0:3])
+
+print(a[2:5]) 
+

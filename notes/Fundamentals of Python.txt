@@ -59,9 +59,96 @@ A variable/function name are basically identifiers. Writing an identifier has so
 
 6)A key word can not be an identifier.
 
- 
+Exercise :  Which of them are valid identifiers?
 
+1) cash$  #Invalid
+
+2) __pi__ #Valid
+
+3) 123game #Invalid 
+
+4) def #Invalid 
+
+5) 99north #Invalid
+
+6) abcd  #Valid
+
+7) xyZyx #Valid
+
+8) kite-kite #Invalid
+
+9) wxh #Valid
+
+10) true #valid
+
+5) Statements :
+
+In python programming, each line is a statement.  A statement is a combination of identifiers, operators, values, function, class etc.
+
+e.g. 
+
+num1 = 10
+num2 = 20
+print(num1+num2)
+
+Identifiers are names given to a variable, function, class, module etc. So all the rules used to write an identifier is also applied to those (variable, function, class, module) names.
+
+
+what is a variable?
+
+It is a name of memory location which stores a value.
+
+num1 =10 
+
+id(num1)
+
+Here num1 is the variable. 
+
+if= 10 #error 
+
+the values assigned a variable are different types and those are called data type.
+There are several data types.
+
+
+1) numeric (int, float, complex)
+2) string (str)
+3) Boolean (bool)
+4) sequence type (tuple, list, range())
+5) set (set, frozen set)
+6) dictionary
+7) None
+8) bytes and bytearray
+
+numeric :
+
+int : Integers are whole numbers. There can be negative or positive numbers
+
+a = -12
+print(type(a))
+
+float : floats are decimal number. There can be negative or positive numbers. There will be a decimal point in the number.
+
+a = 3.24
+print(type(a))
+
+complex : The number has two parts. 1) real part 2) imaginary
+
+real part is always integer or float but the imaginary part is integer/flaot with j symbol
+
+e.g :
  
+5+2j
+10-1j
+-1-1j
+0+100j
+
+
+
+
+
+
+
+
 
 
 
