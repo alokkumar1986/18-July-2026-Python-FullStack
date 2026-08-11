@@ -5,7 +5,7 @@ Any value  that is enclosed with a '' or "" is called a string.
 
 a = 'Aptech'
 
-print(type(a))  
+print(type(a))  #<class 'str'>  
 
 
 string is also the combination characters. (alphabets, numbers, symbols)
@@ -25,14 +25,82 @@ The position from left starts with 0 and from right starts with -1  is called in
 
 string slicing : 
 
-slicing means geting piece of the string. 
+slicing means getting piece of the string. 
 
-string[s:s:s] === s : start index (optional)
-                  s : stop index (optional) (always excluded)
-                  s : step (optional)
+string[s:s:s] === s : start index (mandatory) (if absent, default =0)
+                  s : stop index (mandatory) (always excluded) (if absent default=last index)
+                  s : step (optional) (by default 1)
 
 a = '123&687685RAM'
-print(a[0:3])
 
-print(a[2:5]) 
+print(a[0:3]) #123
+
+print(a[2:5]) #3&6
+
+print(a[:5]) #123&6
+
+print(a[2:]) #3&687685RAM
+
+print(a[:]) #123&687685RAM
+
+print(a[1:7:2]) #2&8
+
+print(a[:7:4])  #16
+
+print(a[::5]   #18R
+
+print(a[-5:-1]) #85RAM
+
+print(a[:-2])  #123&687685R
+
+
+# How to write a single string of multiple lines ?
+
+
+a = 'Aptech
+     Learning'
+
+This is wrong. In this case we use string literal. ''' ''' / """ """.
+
+
+#Few string methods.
+
+len() : This method will give you the number characters in the string.
+
+upper() : This method will convert all the characters of the string to uppercase.
+
+lower() : This method will convert all the characters of the string to lowercase.
+
+capitalize() : This method will convert first characters of the string to uppercase and other to lowercase.
+
+#===========================================================================
+name = 'Harish Shahshra'  print(name[0].upper()+name[1:len(name)-1].lower()+name[len(name)].upper())
+
+output : Harish shahshrA
+
+#===========================================================================
+
+title() : This method will convert string to title case. 
+
+swapcase() : This will convert a capital letter to small and vice versa of the string.
+
+
+strip() : This method will remove space from left and right of the string.
+
+lstrip() :This method will remove space from left of the string.
+
+rstrip() : This method will remove space from right of the string.
+
+
+replace(old, new) :  This method will replace old with new
+
+find() :  This method with search a string in another string, if finds returns lowest index . If does not find returns -1
+
+index() : This method with search a string in another string, if finds returns lowest index . If does not find returns error.
+
+
+rfind() :This method with search a string in another string, if finds returns highest index . If does not find returns -1.
+
+rindex() :This method with search a string in another string, if finds returns highest index . If does not find returns error.
+
 
