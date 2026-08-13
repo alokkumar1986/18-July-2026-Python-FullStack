@@ -103,4 +103,37 @@ rfind() :This method with search a string in another string, if finds returns hi
 
 rindex() :This method with search a string in another string, if finds returns highest index . If does not find returns error.
 
+#==============================================
+
+count() : This method will count the number of occurrence of a string.
+
+startswith() : This will return True when the string starts with a given string, else will return False.
+
+endswith() : This will return False when the string ends with a given string, else will return False.
+
+join() :  This will concatenate a string with another.
+
+
+split() : This will split a string into multple strings and return the list of strings
+
+
+string formatting : 
+=============================
+
+rice = 1
+potato = 2
+
+#rice 1kg and potato 2kg
+
+s = f"rice {rice}kg and potato {potato}kg"
+print(s)
+
+example : 
+
+students = 100
+boys = 70
+
+In the school, there are 100 students and out them 70 are boys and 30 are girls
+
+
 

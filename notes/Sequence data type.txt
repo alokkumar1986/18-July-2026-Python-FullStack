@@ -1,0 +1,60 @@
+Sequence data type : 
+
+a = 10
+b = 10.5
+c = 1+9j
+d = 'Aptech'
+
+The data type which holds multiple values in a sequence manner is call sequence datatype.
+
+1) list
+2) tuple
+3) range()
+
+list : List a sequence data type where we can store multiple values of different types in a sequence manner. The values are written inside [].
+
+e.g :
+
+a = [10, 10.5, 1+9j, 'Aptech']
+
+print(type(a)) #<class 'list'>
+
+Here sequence manner means all the values are stored in an increasing index. From left index starts with 0 and increases. 
+
+From right index starts with -1 and increases.
+
+
+a = [10, 10.5, 1+9j, 'Aptech']
+
+print(a[0]) #10
+print(a[1]) #10.5
+print(a[2]) #1+9j
+print(a[3]) #'Aptech'
+print(a[4]) #Error
+
+List is mutable, duplicated, ordered.
+
+mutable : 
+
+a = [10, 10.5, 1+9j, 'Aptech']
+
+a[0] = 15
+
+print(a)
+
+duplicate :
+
+a = [10, 10.5, 1+9j, 'Aptech']
+
+a.append('Aptech')
+
+print(a)
+
+ordered : 
+
+
+
+#write a program to construct a list of all the student names.
+
+
+

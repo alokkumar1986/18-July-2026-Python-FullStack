@@ -15,4 +15,3 @@ b = c
 print("The first number is: ",a)
 print("The second number is: ",b)
 
-
