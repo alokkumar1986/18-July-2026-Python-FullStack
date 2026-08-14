@@ -1,0 +1,50 @@
+List :
+
+indexing :
+
+We can access the values in a list using index. 
+
+if the index is not present, we get an index out of error.
+
+l = [1, 2, 3, 4, 5, 6]
+
+print(l[8])  #IndexError index out of range
+
+l = [1, 2, 3, 4, 5, 6]
+
+print(l[-7])  #IndexError index out of range
+
+slicing :
+
+list[start:stop:step] 
+
+start : start index
+stop : stop index 
+step : Jump 
+
+l = [1, 2, 3, 4, 5, 6, 7,8,9,10,15,20,25,30]
+
+print(l[:9]) #[1, 2, 3, 4, 5, 6, 7,8,9]
+print(l[9:14]) #[10,15,20,25,30]
+print(l[9:]) #[10,15,20,25,30]
+
+print(l[-6:]) #[9,10,15,20,25,30]
+
+print(l[-10:-9]) #[5]
+
+
+Methods in list : 
+
+append() : To add a value at the end of the list
+insert() : to add a value at any position /index of the list
+pop() : To remove a value from the end of the list. and it return the value popped out
+remove() : To remove a value from any position or index of the list.
+del : To delete the list from the memory
+clear(): To delete all the values from the list. It makes the list empty.
+
+len() : To find the length of the list / the number of values in the list
+count() : To find the number occurrence of a value in the list
+sort() : To make the values in sorting order
+reverse() : To make the values in the reversed
+index() : To find the index of first occurrence of a value.
+
