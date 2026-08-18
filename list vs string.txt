@@ -1,0 +1,84 @@
+list vs string :
+#=====================
+
+indexing :
+
+s = 'Ajskkjsk76667%$&&'
+l = [1, 2, 3, 4, 5, 5.6, 'aptech']
+
+In both string and list index starts with 0 from left and -1 from right and goes increasing.
+
+s[0] #A
+l[0] #1
+s[-1] #&
+l[-1] #aptech
+
+s[100]  #Error IndexError
+l[100]  #Error IndexError
+
+slicing : 
+
+s = 'Ajskkjsk76667%$&&'
+l = [1, 2, 3, 4, 5, 5.6, 'aptech']
+
+s[s:s:s]
+l[s:s:s]
+
+s[:2]
+l[:2]
+
+s[2:]
+l[2:]
+
+s[::2]
+l[::2]
+
+s[::-1]
+l[::-1]
+
+mutation :
+
+s = 'Ajskkjsk76667%$&&'
+l = [1, 2, 3, 4, 5, 5.6, 'aptech']
+
+s[0] = B
+l[0] = 100
+
+string is immutable whereas list is mutable.
+
+ordering : 
+
+string does not allow add/remove a new string to it but we can concatenate (+)
+
+list allow to add/remove a new value using append()/pop()
+
+string+1  #not allowed
+string +string #allowed
+string*2  #allowed
+string*string #not allowed
+
+list+1  #not allowed 
+list*2  #allowed
+
+list+string #not allowed
+list*string #not allowed
+
+
+#
+##
+###
+####
+#####
+
+
+   #
+  # #
+ # # #
+# # # #  
+
+
+
+
+
+
+

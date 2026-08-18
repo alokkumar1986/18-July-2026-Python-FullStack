@@ -135,5 +135,3 @@ boys = 70
 
 In the school, there are 100 students and out them 70 are boys and 30 are girls
 
-
-

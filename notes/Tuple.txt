@@ -1,0 +1,8 @@
+Tuple : 
+
+Tuple is similar as list. but a tuple is defined using ().
+
+l = [1, 2, 3, 4]
+t = (1, 2, 3, 4)
+
+Also it is immutable.
