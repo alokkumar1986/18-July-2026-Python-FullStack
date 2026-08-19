@@ -6,3 +6,100 @@ l = [1, 2, 3, 4]
 t = (1, 2, 3, 4)
 
 Also it is immutable.
+
+
+indexing : So the values in the tuple can be accessed using index number. starting from 0 (from left) or -1 (from right) like list.
+
+When there is no value at an index but we try to access it, we get error (IndexError).
+
+slicing : It is similar to list slicing.
+
+e.g :
+
+t = (1, 2, 3, 4)
+
+t[:2] # (1,2)
+t[2:] #
+t[:] #
+t[::2] #
+t[::-1] #
+
+methods :
+
+As tuple is immutable. So append(), insert(), pop(), remove() is not there.
+
+There are only following methods :
+
+len() :  It gives the number values present in the tuple.
+
+count() : It gives the count of a value occurrence in the tuple.
+
+index() : It gives the index number (from left) of the value in the tuple.
+
+sum() :
+
+max() :
+
+min() :
+
+Packing and unpacking :  
+
+Defining a tuple with multiple values without () is called packing of a tuple.
+
+t = 1, 2, 3, 5
+print(t)
+
+Unpacking :
+
+t = 1, 2, 3, 5
+
+a, b, c, d = t
+
+print(a)
+
+a, b, c, d, e = t #error 
+
+a, b, c = t #error
+
+
+Use cases :
+
+
+1) When the values change frequently, we use list.
+
+2) When values are always fixed, then we use tuple.  (railway platform tickets, pie value)
+
+
+students = [
+('ABC', 75),
+('PQR', 80),
+('XYZ', 96)
+]
+
+students[1] # ('PQR', 80)
+
+students[1][0] #PQR
+
+students[1][1] #80
+
+students[2][1] #96
+
+
+t = ('red', 'green', 'yellow', 'green', 'red', 'green')
+green = t.count('green')
+red = t.count('red')
+yellow = t.count('yellow')
+
+if (red>green and red>yellow) :
+  print('red is common')
+elif green>yellow:
+  print('green is common')
+else:
+  print('yellow is common')
+
+
+
+
+
+
+
