@@ -1,0 +1,149 @@
+Data type :
+
+1) Numeric
+2) Str
+3) Bool
+4) Sequence (list, tuple, range)
+
+(Operators, Control Flow Statements)
+
+5) set
+6) dict
+7) None
+
+
+range() : It is function which takes 3 params
+
+range(s,s,s)  : last and second last are optional
+
+range(5)  : 0...4
+
+range(1,5) : 1...4
+
+range(1,5,2) : 1, 3
+
+range() basically creates sequence of number. It is mostly used in for loop.
+
+for I in range(101):
+   print(I)
+
+#write a program to print the numbers divisible by 2 between 1 and 100.
+
+for item in range(1, 100):
+    if item%2==0:
+      print(item, end=" ")
+
+Operators :
+
+Basically these are the symbol given between two operand and it perform an operation and gives the result
+
+There are following operators
+
+1) Arithmetic
+2) Comparison
+3) Logical
+4) Assignment 
+5) Identity 
+6) Membership 
+7) Bitwise 
+8) Special 
+
+
+Arithmetic: +, -, *, /, //, **
+
++ : Addition : 5 + 3 = 8
+- : Subtraction : 5 -3 = 2
+* : Multiplication : 5 * 3 = 15
+/ : Division : 5 / 3 = 1.666666 (The output is always in decimal)
+// : Floor division : 5 // 3 = 1 (The output is always in whole number)
+** : Exponent : 5 ** 3 = 125
+% : Modulus  : 5 % 3 = 2
+
+Comparison : These operators compare two operand and gives output True/False
+
+== : equal to
+> : greater than
+< : smaller than
+>= : greater than equal to
+<= : smaller than equal to
+!= : not equal to
+
+
+Logical : and , or, not
+
+a = 5
+b = 3
+
+print(a and b) # a is True , b
+              # a is False, a
+
+
+print(a or b) # a is True , a
+              # a is False, b
+
+print(not a) # False
+
+Every number is always True, except 0, None, [], (), {}, ''
+
+Assignment :  =, +=, -=, *=, /=,  //=, **=, %=
+
+a = 5
+b = 3
+
+a = 6
+a = b
+
+a += b # a = a+b
+print(a)
+print(b)
+a -= b # a = a-b
+a *= b # a = a*b
+a /= b # a = a/b
+a //= b # a = a//b
+a **= b # a = a**b
+a %= b # a = a% b
+
+Identity : is , is not
+
+a = 5
+b = 5.0
+
+print(a==b) #True
+print(a is b) #False
+
+print(a is not b) #True
+
+Note : is operator checks both value and type.
+
+Membership : in, not in (It checks whether a value is present in a sequence)
+
+5 in range(5) # False
+5 not in range(5) # True
+5 in range(0,6) #True
+
+'a' in 'aptech' #True
+5 in [1, 2, 3, 4, 5]  #true
+5 in (1, 2, 3, 4) #False
+
+Ternary : 
+
+1)
+a = 5
+b = 3
+
+if a > b :
+  print(a)
+else: 
+  print(b)
+
+print(a) if a>b else print(b)
+
+2) if 5 in range(5): 
+     print('Not in range')
+   else:
+     print('In range')
+
+print('Not in range') if 5 in range(5) else print('In range')
+
+If else can be written as ternary when block and else block has only one/one statement
+
