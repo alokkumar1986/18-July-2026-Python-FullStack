@@ -147,3 +147,46 @@ print('Not in range') if 5 in range(5) else print('In range')
 
 If else can be written as ternary when block and else block has only one/one statement
 
+Bitwise Operator:
+
+&  : bitwise and
+|  : bitwise or
+^  : bitwise xor
+~  : bitwise NOT
+>> : bitwise rightshift
+<< : bitwise leftshift
+
+
+a = 5 #convert it to bin
+b = 3 #convert it to bin
+print(a & b) #apply logical and  
+
+
+a = 5  #convert it to bin 101
+b = 3  #convert it to bin 011
+print(a | b) # apply logical or 111 = 7
+
+a = 5 #convert it to bin 101
+b = 3 #convert it to bin 011
+print(a ^ b)  #when only one is 1 between two operands, return 1 (0,1 / 1,0) 
+              # in other cases return 0 (1,1/0,0)
+
+a = 5  
+print(~a)  # add 1 to the operand and change the sign.
+
+
+a = 5  #convert it to bin 101
+b = 3  # 
+print(a<<b) # then left shift the digits by number of 2nd operand
+
+a = 5
+b = 3
+print(a >> b)
+
+walrus operator : 
+
+:=
+
+a = 5
+a := 5
+
