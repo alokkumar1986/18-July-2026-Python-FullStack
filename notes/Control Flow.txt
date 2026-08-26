@@ -1,0 +1,195 @@
+Control Flow :
+
+In python the control flow of the execution python program is from top to bottom as it is interpreted. 
+
+But there are few statements which can make flow of execution to jump from one place to other.
+
+There are following statements.
+
+1) Conditional Statement
+2) Iterative Statement
+3) Transfer Statement
+
+Conditional Statement :
+
+1) if 
+
+syntax :
+
+if condition: 
+  statement1
+statement2
+
+Here if the condition is true, then statement1 and finaly statement2 will be executed
+
+if the condition is false , then only statement2 will be executed.
+
+similarly,
+
+1)
+if condition: 
+   statement1
+   statement2
+   statement3
+statement4
+
+when condition is true, all the statements will execute
+when condition is false, only statement4 will execute
+
+example :
+
+#write a program to check the number is palindrome
+
+num = input('Enter a number : ')
+if num[:] == num[::-1]:
+   print('Palindrome')
+
+
+2) if else
+
+syntax :
+
+if condition:
+  statement1
+else:
+  statement2
+
+when condition is true, statement1 will execute else statement2 will execute
+
+#write a program to check the number is palindrome
+
+num = input('Enter a number : ')
+if num[:] == num[::-1]:
+   print('Palindrome')
+else:
+   print('Not palindrome')
+
+
+2) if elif else
+
+syntax : 
+
+if condition1:
+  statement1
+elif condition2:
+   statement2
+else:
+   statement3
+
+here when condition1 is true, the only statement1 will execute
+     when condition2 is false, then it will check condition2, if condition2 is true, then only statement2 will execute
+     when condition1 and condition2 both are false, then only state
+
+#write a program to input one digit number and print it in words
+
+num = int(input('Enter a one digit number :'))
+
+if num==0:
+   print('Zero')
+elif num==1:
+   print('One')
+elif num==2:
+   print('Two')
+elif num==3:
+   print('Three')
+elif num==4:
+   print('Four')
+elif num==5:
+   print('Five')
+elif num==6:
+   print('Six')
+elif num==7:
+   print('Seven')
+elif num==8:
+   print('Eight')
+elif num==9:
+   print('Nine')
+else:
+  print('Wrong Number')
+
+
+Note : In python, there is no switch statement.
+
+Iterative Statements: 
+
+1) for
+2) while
+
+To execute a group of statements repetitive until a condition satisfy.
+
+#write a program to print 1 to 5.
+
+print(1)
+print(2)
+print(3)
+print(4)
+print(5)
+
+for I in range(1,6):
+  print(I)
+
+1
+2
+3
+4
+5
+
+for loop :
+
+syntax :
+
+for item in sequence:
+   statement1
+
+sequence : string, list, tuple, range()
+
+1) for item in 'Aptech':
+      print(item)
+
+A
+p
+t
+e
+c
+h
+
+2) for item in [1, 2, 3, 4, 5]:
+       print(item)
+
+1
+2
+3
+4
+5
+
+3) for item in (1, 2, 3, 4, 5):
+      print(item)
+
+1
+2
+3
+4
+5
+
+5) for item in range(10):
+     print(item)
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+example :
+
+for I in 'Learning':
+   print('A')
+
+
+
+
+
