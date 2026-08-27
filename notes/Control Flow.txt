@@ -189,7 +189,74 @@ example :
 for I in 'Learning':
    print('A')
 
+while loop :
+#####################
+
+syntax:
+
+while(condition):
+  statement1
+
+Here until the condition is true, the statement1 will execute. 
 
 
+example :
+
+while(True):
+  print('Aptech')
+
+So the above example will run forever. In order to quit or stop the loop, we need to make the condition False.
+
+i=1
+while(i<=10):
+  print('Aptech')
+  i+=1
+
+So here the condition is getting False when i=11. It will run only 10 times.
 
 
+Note : there is always chance of infinite loop in case of while. In that case we need to stop it abnormally.
+
+Transfer Statements: 
+
+1) continue
+2) break
+3) pass
+
+These are the statement always written inside a loop. 
+
+continue : This statement skips the current iteration and starts next iteration.
+
+example :
+
+for I in range(5):
+  if I==3:
+   continue
+  print(I)
+
+#output
+0
+1
+2
+4
+
+break : This statement stops the loop.
+
+example :
+
+for I in range(5):
+  if I== 3:
+    break
+  print(I)
+
+
+#output 
+
+0
+1
+2
+
+pass : This statement is an empty placeholder. It does nothing.
+
+for I in range(100):
+   pass
