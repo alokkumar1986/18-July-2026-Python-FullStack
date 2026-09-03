@@ -1,0 +1,125 @@
+Set Datatype :
+#=================================
+This is a collection type where we can store multiple items in a single variable and the items should be unique.
+
+syntax :
+1)
+s = {1, 2, 3, 4, 5 }
+print(type(s))
+
+2)
+s = set([1,2,3,4,5])
+print(type(s))
+
+3) 
+s = set((1, 2, 3, 4, 5))
+print(type(s))
+
+
+set is unordered, unchangeable and don't allow duplicate items
+
+s = {1, 2, 3, 4, 4, 4, 2, 1, 5}
+print(s)
+
+Hence we can store duplicate items but set automatically keeps only unique items
+
+
+s = {1, 2, 3, 4, 5}
+print(s[1])
+
+This will give error as set items are not accessible using index.
+
+How to access the values :
+
+for I in s:
+  print(I)
+1
+2
+3
+4
+5
+
+
+s = {1, 2, 3, 4, 5}
+print(s[1:3])
+
+Here we will also get error as slicing is not supported by set.
+
+methods in set : 
+======================
+
+len():  It gives the number of items in a set
+
+
+# Empty set:
+
+s = {}
+print(type(s))
+
+This is not an empty rather an empty dictionary
+
+s = set()
+print(type(s))
+
+
+#=================================================
+
+l = [1, 2, 3, 4]
+l[0] = 10
+print(l)
+
+s = {1, 2, 3, 4}
+s[0] = 10
+print(s)
+
+note : Set is immutable
+
+l = [1, 2, 3, 4]
+
+print(l[0])
+print(l[1])
+print(l[-1])
+
+
+s = {1, 2, 3, 4}
+print(s[0])  #error
+print(s[-1]] #error
+
+note : Set is unordered
+
+methods : 
+#==============================
+
+add() : adds an item to the set
+remove() : removes an item from set (if item is not present, it gives error)
+discard() : removes an item from set (if item is not present, it gives same set nothing changes )
+pop() : removes an item and return it
+clear() : clears the items from the set and makes it empty.
+del : deletes the set
+copy() : copies a set
+
+
+mathematics methods:
+#==============================
+
+union() : joins two sets, gives another set  (|)
+intersection() : finds the common items and return the set (&)
+difference() : Returns the items in first set but not in second set (-)
+symmetric_difference() : return the items which are not common. (^)
+
+
+update() : it combines any sequence with the set, returns the updated set
+
+frozen set : It is the readonly version of set. which means we can not add/update/remove items from frozen set.
+
+syntax :
+
+fs = frozen([1, 2, 3)]
+print(type(fs))
+
+
+
+
+
+
+
