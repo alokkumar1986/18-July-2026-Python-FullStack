@@ -1,0 +1,115 @@
+dictionary :
+#===================
+
+Dictionary (dict) is a collection datatype where items are stored in key, value pair.
+
+syntax :
+
+d = {
+      'name': "Ardhendu",
+      'age' : 38,
+      'gender' : 'Male'     
+    }
+
+How to construct a dict :
+
+1)student = {
+      'name': "Ardhendu",
+      'age' : 38,
+      'gender' : 'Male'     
+    }
+
+2) student = dict(name='Ardhendu', age= 38, gender='Male')
+
+3) student = dict([('name', 'Ardhendu'), ('age', 38), ('gender','Male')])
+
+
+key :  number, string
+value : number, string, list, tuple, set,  dict
+
+
+example : 
+
+1) course = { 0: 'MySql', 1: 'Python', 2: 'Power BI'}
+   course = { 'course1' : 'MySQL', 'course2' : 'Python', 'course3': 'Power BI'}
+
+2) pythonclass = {
+   'course' : ['Basic', 'Numpy', 'Pandas', 'Matplotlib', 'Sci-kit', 'Django'],
+   'Fee' : (10000, 15000)
+}
+
+
+How to access the values :
+
+1)
+course = { 0: 'MySql', 1: 'Python', 2: 'Power BI'}
+
+Note : We can access values using key.
+
+print(course[0])
+print(course[1])
+print(course[2])
+
+
+2) pythonclass = {
+   'course' : ['Basic', 'Numpy', 'Pandas', 'Matplotlib', 'Sci-kit', 'Django'],
+   'Fee' : (10000, 15000)
+}
+
+print(pythonclass['Fee'])
+
+#How to get keys, values and items from a dict
+#================================================
+
+course = { 0: 'MySql', 1: 'Python', 2: 'Power BI'}
+
+keys()
+values()
+items()
+
+print(course.keys())
+print(course.values())
+print(course.items())
+
+for loop in dict :
+
+course = { 0: 'MySql', 1: 'Python', 2: 'Power BI'}
+
+for I in course:
+  print(I)
+
+# Dictionary is ordered, changeable and do not allow duplicate.
+
+course = { 0: 'MySql', 1: 'Python', 2: 'Power BI'}
+course[0] = 'PgSQL'
+print(course)
+
+course = { 0: 'MySql', 1: 'Python', 2: 'Power BI'}
+course[3] = 'MySql'
+print(course)
+
+
+methods :
+
+len(): It gives number items
+
+course = { 0: 'MySql', 1: 'Python', 2: 'Power BI'}
+print(len(course))  #3
+
+update() : To add a dict to another dict
+
+pop() : remove a value using key and return the value
+
+clear() : To empty the dictionary
+
+del : To remove an item or delete the dict
+
+
+
+course = { 0: 'MySql', 1: 'Python', 2: 'Power BI'}
+
+what is difference between course[1] and course.get(1) ?
+
+when key is not present course[key] will give a KeyError whereas 
+
+course.get(key) will give None
