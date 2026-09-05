@@ -1,0 +1,95 @@
+Function :
+#===========================
+
+function is self contained block and it is executed when it is called.
+
+syntax :
+
+def function_name():
+   function_body
+
+
+Here function_name can be anything as per user
+
+And function_body contain one or more statement
+
+
+example :
+
+print('Hello Alice')
+print('Hello Tom')
+print('Hello Robin')
+
+#======================
+
+def sayHello(name):
+    print('Hello', name)
+
+sayHello('Alice')
+sayHello('Tom')
+sayHello('Robin')
+
+
+
+def sayHello(name):
+    print('Hello', name)
+
+this part is called function body
+
+
+sayHello('Alice') : function call
+
+Note : function body always written at top whereas function call at the bottom.
+function call can written multiple times but function body is always written once. 
+function helps in code reusability.
+
+
+arguments: The variables defined in function body called 'Arguments'
+
+
+parameters:  The values passed in function call is called 'Parameters'
+
+
+Note : The number of arguments must be equal to number of parameter.
+
+
+
+A function can return one value or more
+
+when it return, then we must assign it to a variable while calling it.
+
+
+def findSum(a, b):
+   return a+b
+
+
+sum = findSum(5,6)
+print('Sum :', sum)
+
+
+
+def findSumDiff(a, b):
+   return a+b, a-b
+
+
+val = findSumDiff(5,6)
+print(val)
+print('Sum :', val[0])
+print('Difference :', val[1])
+
+
+Note : when a function returns multiple values, it is stored as a tuple in the function call variable
+#============================================
+
+default parameter
+positional arguments
+keyword arguments
+user defined vs predefined functions
+
+exception handling
+file operation
+oops
+
+
+
+
