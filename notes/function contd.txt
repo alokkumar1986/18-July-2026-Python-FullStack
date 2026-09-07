@@ -1,0 +1,20 @@
+default parameter
+#==========================
+
+When we call a function, we pass parameters to function body. If we don't pass then we get error. 
+
+There is one way to avoid this error by assigning a default value in the function body.
+
+This parameter is called default parameter.
+
+
+def sayHello(name='Alice'):
+   print('Hello', name)
+
+sayHello()
+
+Here the default value "Alice" is assigned to name and if we don't pass any parameter the default value will be printed.
+
+If we pass a value as parameter, then default will be overwritten and the passed value will be printed. 
+
+
