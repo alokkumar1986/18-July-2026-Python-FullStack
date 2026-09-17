@@ -1,0 +1,31 @@
+file handling :
+
+Generally the operation on a file is known as file operations. In python we can create, read, write and delete a file.
+
+For file operation we must write following two first
+
+1) open() : This method is used to open an existing file with various mode or create a file with various mode.
+2) close() : This method is used to close the file once a operation is ended.
+
+
+syntax :
+
+f = open('filename', 'mode')
+f.close()
+
+The above always need a close()
+
+
+with open('abcd.txt', 'r') as f:
+   f.read()
+
+The above does n't need a close()
+
+
+modes :
+
+r : read mode (an existing file, gives error if file not present)
+a : append content mode (create a file if not present)
+w : write content mode (create a file if not present)
+x : create a file mode (create a file if not present, gives error if file is present)
+

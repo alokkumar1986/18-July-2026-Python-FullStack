@@ -1,0 +1,47 @@
+Exception Handling :
+#===================================
+exception are the abnormal situation where our program halts.
+
+example : 
+
+print(x)
+
+
+ To handle such situation, we use four keywords to handle exception
+
+1) try
+2) except
+3) else (optional)
+4) finally (optional)
+
+try always hold the lines/statements which generate exception.
+
+except always hold the statements to handle exception.
+
+else always hold the statement if there is no exception.
+
+finally always hold the statement neither there exception nor no exception
+
+case -1 
+try  is mandatory, except is mandatory if there is exception
+                   except is optional if there is no exception. (when there is no exception and we omitted except block then finally block become mandatory)
+
+case -2 
+try is mandatory, else block always follows except block.
+
+case -3 
+try is mandatory, else block and except block can not change their position.
+
+case -4 
+try is mandatory, then there may be multiple except block.
+
+case -5 
+try is mandatory, then there may not be multiple else block after except block
+  
+
+
+
+
+
+
+ 
