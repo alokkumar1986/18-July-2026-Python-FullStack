@@ -25,7 +25,20 @@ The above does n't need a close()
 modes :
 
 r : read mode (an existing file, gives error if file not present)
-a : append content mode (create a file if not present)
-w : write content mode (create a file if not present)
+a : append content mode (create a file if not present) append new content at end of the file where existing content end.
+w : write content mode (create a file if not present) writes new content by removing existing content
 x : create a file mode (create a file if not present, gives error if file is present)
+
+
+read() : To read all the contents of a file
+write() : To write something into a file
+readline() : To read one line at a time
+readlines() : To read all the the line and return a list of the lines
+
+
+remove() : To remove an existing file, if file not available gives error
+exists() : To check file present of not. If file present return True else returns False.
+
+mkdir() : To create a folder
+rmdir() : to remove a folder
 
