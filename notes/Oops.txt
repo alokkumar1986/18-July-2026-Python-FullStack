@@ -1,0 +1,10 @@
+Oops : 
+
+class
+object
+_self
+__init__
+__str__
+encapsulation
+inheritance
+abstraction

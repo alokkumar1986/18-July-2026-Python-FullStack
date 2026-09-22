@@ -1,0 +1,41 @@
+How to connect MySQL with Python :
+#==================================
+
+pip install mysql-connector-python
+
+step 1 :  import mysql.connector
+
+This need to be imported in order to connect MySQL
+
+step 2 : 
+
+mydb = mysql.connector.connect(
+host="127.0.0.1",
+user="root",
+password='',
+database='demo')
+
+if not mydb:
+  print('Not Connected')
+
+
+#==============================================
+
+Virtual Environment : 
+#===============================
+Virtual Environment is different from actual environment. Actual Environment is the gloabal /system environment.  To make/ run a python project independently from actual environment, we generally creates virtual environment. 
+
+py -m venv .venv
+
+
+activate :  Command Prompt
+
+cd .venv/scripts
+
+activate.bat
+
+(pip list : To check the packages installed in an environment)
+
+
+
+
