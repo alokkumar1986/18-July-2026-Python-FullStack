@@ -1,0 +1,22 @@
+Encapsulation :
+
+It is a concept of Object Oriented Programming. We wrap members inside a class and also we will able to access them by creating object of the class.
+
+class A :  
+  def __init__():
+
+  def Show():
+
+a= A()
+a.show()
+
+class B:
+
+  def ___init():
+
+  def showB():
+
+  
+b = B()
+
+

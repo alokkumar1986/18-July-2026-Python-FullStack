@@ -1,0 +1,128 @@
+Inheritance : 
+
+Inheritance is a process of deriving all the methods and members from a class to another class.
+
+
+class A:   //Base class or Parent Class
+  def X():
+    
+  def Y():
+
+class B (A):  //Child class
+  def X():
+    
+  def Y():
+
+  def P():
+   
+  def Q():
+
+The class from which all properties are inherited is called as Base / parent Class.
+The class to which all properties are inherited is called child class.
+
+syntax for inheritance :
+
+class A :
+  properties
+
+class B(A): 
+  properties
+
+Importance of Inheritance :
+
+1) It is very useful for code reusability.
+2) It makes the code modular. (Code maintenance will be easy).
+3) It also makes code more readable, code optimised.
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+  def showData():
+    print('Name : ' , self.name)
+    print('Age : ' , self.age)
+
+p = Person('Ram', 25)
+p.showData()
+
+
+#=======================
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+  def showData(self):
+    print('Name : ', self.name)
+    print('Age : ', self.age)
+
+
+class Student(Person):
+    pass
+
+
+p = Student('Ram', 25)
+p.showData()
+
+#========================================
+  
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+  def showName(self):
+    print('Name : ', self.name)
+    print('Age : ', self.age)
+
+
+class Student(Person):
+    def __init__(self, name, age, rollno):
+        super().__init__(name, age)
+        self.rollno = rollno
+    def showRollNo(self):
+        print('Roll No : ', self.rollno)
+
+
+p = Student('Ram', 25, 'OR002910')
+p.showName()
+p.showRollNo()
+#==============================================
+
+super() : It always represent the parent class. It always used to initialize parent members from child class. It should be the first line inside child class __init__()
+
+
+Types of Inheritance :
+
+In python there are following inheritance :
+
+1) Simple Inheritance
+2) Multiple Inheritance
+3) Multilevel Inheritance
+4) Hierarchical Inheritance
+5) Hybrid Inheritance 
+
+
+1) Simple Inheritance / Single Inheritance :
+
+In this, a class is directly inherited from another class.
+
+
+2) Multiple Inheritance :
+
+In this, a class is derived from two or more class.
+
+3) Multilevel Inheritance :
+
+In this, a class is derived from another class which is derived from another class.
+
+4) Hierarchical Inheritance :
+
+In this, we have two different class derived from an another class.
+ 
+5) Hybrid Inheritance : 
+
+In this, we will have multilevel as well as multiple and hierarchical Inheritance
+
+
+
+
+
