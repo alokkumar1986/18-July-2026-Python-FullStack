@@ -1,1 +1,119 @@
-Polymorphism : 
+Polymorphism :
+
+Poly : many 
+polymorphism : many form
+
+In OOPS, polymorphism refers to a method/function/operator to perform differently in different situation.
+
+built-in function :
+
+len() : 
+
+string : If we use this len() in string, it will give the number of characters in a string.
+
+s = input("Enter your string") 
+print("Length of the string is :", len(s))
+
+list : If we use this len() in list, it will give the number of values stored in the list.
+
+l = [12, 23, 34, 57, 43, 54]
+print("The no. of values in the list : ", len(l))
+
+dictionary : If we use this len() in dict, it will give the number of key:value pair in the dict.
+
+d = { name : "Aptech",
+      location : "Nayapalli",
+      course : ['Python', 'MySQL', 'Data Science', 'MERN', 'MEAN']
+    }
+print(len(d)) 
+
+This is one type of polymorphism. 
+
+Oops mostly deals with classes and object. Polymorphism is also used in classes.
+
+
+class Car:
+  brand = ''
+  model = ''
+  def __init__(self, b, m):
+    self.brand = b
+    self.model = m
+  def move(self):
+    print("Drive")
+
+class Boat:
+  brand = ''
+  model = ''
+  def __init__(self, b, m):
+    self.brand = b
+    self.model = m
+  def move(self):
+    print("Sail")
+
+class Plane:
+  brand = ''
+  model = ''
+  def __init__(self, b, m):
+    self.brand = b
+    self.model = m
+  def move(self):
+    print("Fly")
+
+
+c = Car('Suzuki', 'Fronx')
+c.move()   # Drive
+
+b = Boat('Xyz' , 'Pqr')
+b.move()   # Sail
+
+p = Plane('Indigo', 'Spicejet')
+p.move() # Fly
+
+
+In the above example, the move() is behaving differently for different class. Hence it is polymorphism. 
+
+Polymorphism also used in inheritance. 
+
+class Vehicle: 
+
+  brand = ''
+  model = ''
+  def __init__(self, b, m):
+   self.brand=b
+   self.model = m
+  def move(self):
+   print("Drive")
+
+
+class Car(Vehicle):
+  pass
+
+class Boat(Vehicle):
+   def move(self):
+    print("Sail")
+
+class Plane(Vehicle):
+   def move(self):
+    print("Fly")
+
+c = Car('Suzuki', 'Fronx')
+c.move()   # Drive
+
+b = Boat('Xyz' , 'Pqr')
+b.move()   # Sail
+
+p = Plane('Indigo', 'Spicejet')
+p.move() # Fly
+
+This is also polymorphism.
+
+
+   
+
+
+
+ 
+
+
+
+

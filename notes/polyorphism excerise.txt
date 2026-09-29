@@ -1,0 +1,20 @@
+1) Create a Cat class with sound(). the sound method prints 'Mew Mew'
+
+2) Create another Fox class with sound() that prints 'Wa-pa-pa-pa-pow'
+
+3) Create object of both class c1, f1 and call sound method.
+
+
+class Cat:
+  def sound(self):
+    print('Mew mew')
+
+class Fox:
+  def sound(self):
+    print('Wa-pa-pa-pa-pow')
+
+c1 = Cat()
+f1 = Fox()
+
+c1.sound()
+f1.sound()

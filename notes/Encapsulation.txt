@@ -20,3 +20,36 @@ class B:
 b = B()
 
 
+#================================================
+access specifier :
+
+public :
+private :
+
+
+class A:
+   name = ''
+   def __init__(self, n):
+     self.name = n
+   def get(self):
+     print(self.name)
+
+
+class B:
+  __name = ''
+  def __init__(self, n):
+     self.__name = n
+  def get(self):
+     print(self.__name)
+
+
+print(A.name)
+print(B.__name)
+
+
+
+private variable and method : 
+
+
+
+

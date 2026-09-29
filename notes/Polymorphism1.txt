@@ -1,0 +1,237 @@
+Polymorphism : 
+
+Poly means many, morphism means form. Hence polymorphism is a fundamental concept of oops. It is the methods/classes/operators behave differently in different situation.
+
+
+method polymorphism :
+
+Lets take example of len() method for different collection.
+
+
+string :
+
+s = "Aptech Learning, Nayapalli'
+
+print(len(s))  # the no of characters in the string.
+
+
+list :
+
+l = [1, 34, 45, 32, 56, 65, 88, 66]
+
+print(len(l)) # the no. of values in the list
+
+
+dictionary :
+
+d = {
+  'name' : 'Sachin',
+  'age' : 23
+  'address' : 'Baramunda'}
+
+print(len(d)) # the no. of keys in the dictionanry
+
+
+These are the polymorphism of method len() for different collection. So polymorphism states a method behaves differently for different objects.
+
+#======================================================================================
+
+class polymorphism :
+
+Lets see an example :--
+
+class Vehicle:
+  
+   def __init__(self,mk, md):
+      self.make = mk
+      self.model = md
+
+   def move(self):
+     print(self.make, " - ", self.model , end="")
+     print('Moves')
+
+class Car(Vehicle):
+   pass
+
+
+class Ship(Vehicle):
+   def move(self):
+      print(self.make, " - ", self.model , end="")
+      print('Sails')
+
+
+obj = Car('Suzuki', 'Baleno')
+obj.move()
+
+obj1 = Ship('Indian Coastal Shipping Company', 'A1 Boat')
+obj1.move()
+
+
+#==================================================================
+from multipledispatch import dispatch
+
+
+class FindSum:
+   @despatch(int, int)
+   def findSum(a, b):
+     return a+b
+
+   @dispatch(str, str)
+   def findSum(a, b)
+     return a+b
+   
+   @dispatch(int, int, int)
+   def findSum(a, b, c):
+     return a+b+c
+
+obj = FindSum()
+
+print(obj.findSum(10, 20)) # 30
+print(obj.findSum('Aptech', 'Learning')) # AptechLearning
+print(obj.findSum(12, 13, 15)) # 40
+
+
+
+
+method overriding : When a parent class method is defined inside a child class, it is called method overriding.  It is also called as dynamic binding.
+
+In the above example, the method move() is called twice by car class object and ship class object. But car class object calls the move mothod of parent class whereas ship class object calls the move() of itself.
+
+Hence the binding of calling the function is decided during program execution. It is called dynamic binding.
+
+
+
+method overloading : when we have same method with different type and no. of arguments/parameters and different return type, it is called method overloading. It is also called as static binding.
+
+In the above example, methods are binded to method calling and decided which method to be called. This type of binding is pre-decided before programme execution. Hence it is static binding.
+
+
+
+
+Difference between static binding & dynamic binding :
+
+Difference between method overloading & method overriding :
+
+#============================================================================================================
+
+Abstraction : It is a fundamental concept of oops where it states that hiding complex functionality and exposing required functionalities to end user. So that user can manage and debug the code easily.
+
+
+In oops, abstraction is handled by abstract class.
+
+ABC : Abstract Base Class
+
+A class inherited from ABC and has abstract method in it, it is called abstract class.
+
+
+abstract method : Any method which has a property declaration @abstractmethod at start of the function and it has no body. It is called abstract method
+
+
+syntax : 
+
+@abstractmethod
+def functionname(self):
+ pass
+
+
+class AbcstractclassName(ABC):
+ 
+  @abstractmethod
+  def functionname(self):
+   pass
+ 
+  def functionname1(self):
+   print('Concrete Method')
+
+
+
+example :
+
+from abc import ABC, abstractmethod
+
+class X(ABC):
+  
+  @abstractmethod
+  def fun1(self):
+    pass
+
+  def fun2(self):
+   print('concrete Method')
+
+x = X()
+
+This program will give error because we can not create an object of an abstract class.
+
+
+Note : Abstract class can not be instantiated. It is used to be inherited by another class and the abstract method is to be overridden in the child.
+
+
+example :
+
+from abc import ABC, abstractmethod
+
+class X(ABC):
+  
+  @abstractmethod
+  def fun1(self):
+    pass
+
+  def fun2(self):
+   print('concrete Method')
+
+
+class Y(X):
+  def fun1(self):
+   print('Abstract Method overridden in child')
+
+y = Y()
+y.fun1()
+y.fun2()
+
+When we inherit a class from an abstract class, then we should override the abstract method of abstract class inside child class. Else we will get abstract class implementation error.
+
+example : 
+
+
+from abc import ABC, abstractmethod
+
+class X(ABC):
+  
+  @abstractmethod
+  def fun1(self):
+    pass
+
+  def fun2(self):
+   print('concrete Method')
+
+
+class Y(X):
+  pass
+
+
+y = Y()
+y.fun2()
+
+#Error : We have implemented/ inherited abstract class but without overriding  abstract method fun1().
+
+
+Note : Abstract class are used like a blueprint. It is always implemented inside a child class.
+
+
+Self Study :
+
+# interface
+# singleton class
+# wrapper class
+# iterator & iterable
+
+
+
+
+
+
+
+
+
+
+
